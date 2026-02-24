@@ -1,0 +1,426 @@
+body {
+
+        font-family: 'Roboto', sans-serif;
+        color: #434455;
+        background-color: #ffffff;
+        line-height: 1.5;
+        
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header > .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo,
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ a {
+     text-decoration: none;
+     color: currentColor;
+ }
+
+ button {
+    font-family: inherit;
+    cursor: pointer;
+    background-color: transparent;
+ }
+ address {
+    font-style: normal;
+ }
+
+ img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+ }
+ 
+ 
+ a:focus {
+    color: #434455;
+ }
+
+ .header-list-link:hover,
+ .header-list-link:focus {
+     color: #404BBF;
+ }
+
+ .header-address-link:hover,
+ .header-address-link:focus {
+     color: #404BBF;
+ }
+
+.header-logo { 
+   
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2e2f42;
+    
+}
+.logo-span {
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+.navigation-header {
+
+    margin-left: 76px;
+}
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header-list-items {
+    
+}
+.header-list-link {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    display: block;
+    padding: 24px 0;
+       
+}
+.header-address {
+
+margin-left: auto;
+
+}
+.header-address-list {
+    display: flex;
+    gap: 40px;
+    
+
+}
+.header-address-item {
+}
+.header-address-link {
+   
+    display: block;
+    padding: 24px 0;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.hero-section {
+    background-color: #2e2f42;
+    padding: 188px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.hero-title {
+
+    max-width: 496px;
+    margin: 0 auto 48px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+        }
+    
+
+
+.hero-button {
+    display: inline-block;
+
+    padding: 16px 32px;
+
+    background: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404BBF;
+}
+
+.section-our-features {
+ padding: 120px 0px;
+
+}
+
+.title-our-features {
+
+}
+
+.our-features-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.our-features-item {
+    width: 264px;
+}
+
+.title-parts-features {
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: left;
+    margin-bottom: 8px;
+   
+
+}
+
+.text-features-describtion {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: left;
+
+}
+
+.team-section {
+
+    background-color: #f4f4fd;
+    padding: 120px 0;
+        }
+
+
+.logo-team {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 72px;
+    text-align: center;
+    margin: 0 0 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.team-list-item {
+
+    width: 264px;
+    background-color: #fff;
+    border: 1px solid #e7e9fc;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+
+
+.team-card-content {
+
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.our-team {
+
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+
+.our-team-list {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+}
+
+.footer-title {
+
+    background-color: #2e2f42;
+    padding: 100px 0;
+}
+
+.footer-logo {
+
+    display: inline-block;
+    margin-bottom: 16px;
+   
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;
+        
+}
+
+.footer-container {
+    max-width: 264px;
+    }
+
+
+.list-logo {
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+}
+
+.portfolio-section {
+
+    padding: 120px 0;
+}
+
+.logo-portfolio {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin: 0 0 72px;
+}
+
+.portfolio-list {
+ background: #ffffff;
+    width: 360px;
+}
+       
+
+.portfolio-s {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    margin: 0;
+    padding: 0;
+   justify-content: center;
+        }
+
+
+.portfolio {
+    margin: 0 0 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: left;
+}
+
+.portfolio-item {
+   
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: left;
+    margin: 0;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.portfolio-card-content {
+
+padding: 32px 16px;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    border-bottom: 1px solid #e7e9fc;
+}
+    
+
+
+.container {
+
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+        }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
