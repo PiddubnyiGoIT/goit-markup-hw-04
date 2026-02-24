@@ -149,6 +149,12 @@ margin-left: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url("../images/hero/hero-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
     
 }
 
