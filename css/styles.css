@@ -19,6 +19,7 @@ p {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header > .container {
@@ -114,12 +115,16 @@ ol {
     color: #2e2f42;
     display: block;
     padding: 24px 0;
+
+    position: relative;
        
 }
 
 .header-list-link.active {
     position: relative;
     color: #404BBF;
+
+    position: relative;
 
 }
 
@@ -178,6 +183,8 @@ margin-left: auto;
 
     max-width: 1440px;
     margin: 0 auto;
+
+    background-repeat: no-repeat;
     
 }
 
@@ -298,14 +305,10 @@ margin-left: auto;
 
     width: 264px;
     background-color: #fff;
-    border: 1px solid #e7e9fc;
     border-radius: 0 0 4px 4px;
     overflow: hidden;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
-    box-shadow: 0 0 10px 0 rgb(17, 17, 17, 0.8);
-    
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
 
 
@@ -387,8 +390,17 @@ margin-left: auto;
 }
 
 .portfolio-list {
- background: #ffffff;
+    background: #ffffff;
     width: 360px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-list:hover {
+    transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0.8;
 }
        
 
@@ -428,10 +440,12 @@ margin-left: auto;
 
 .portfolio-card-content {
 
-padding: 32px 16px;
+    padding: 32px 16px;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     border-bottom: 1px solid #e7e9fc;
+    transition: opacity 0.3s ease;
+    opacity: 0.8;
 }
     
 
@@ -459,7 +473,7 @@ padding: 32px 16px;
 
 .features-wrapper {
 
-    border: 1px solid #B0B0B0;
+    border: 1px solid #d3d3d3;
     border-radius: 4px;
     width: 264px;
     height: 112px;
@@ -476,22 +490,30 @@ padding: 32px 16px;
 }
 
 .logo-wrapper {
-    
-display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: #6a4cfc;
-    border-radius: 50%;
-    margin-bottom: 32px;
-    margin-top: 8px;
-    
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6a4cfc;
+        
+        border-radius: 50%;
+     
+        width: 40px;
+        
+        height: 40px;
+       
+        transition: background-color 0.3s ease;
 }
+    
+
 
 
 .team-logo {
-fill: white;
+    fill: white;
+    transition: fill 0.3s ease;
+
+    width: 100%;
+    height: 100%;
+    
 }
 
 .logo-list {
@@ -510,8 +532,8 @@ fill: white;
 
 .overlay {
     position: absolute;
-    top: 40;
-    left: 32;
+    top: 40px;
+    left: 32px;
     transform: translateY(464px);
     transition: 250ms cubic-bezier (0.4, 0, 0.2, 1);
 
@@ -528,3 +550,13 @@ fill: white;
     height: 100%;
 }
 
+.team-logo-a:hover {
+    fill: #34b200;
+    display: block;
+    width: 24px;
+    height: 24px;
+    transform: scale(1.1);
+}
+.logo-wrapper:hover {
+    background-color: #4a35c7;
+}
