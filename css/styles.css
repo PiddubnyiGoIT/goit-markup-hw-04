@@ -118,7 +118,9 @@ ol {
 }
 
 .header-list-link.active {
+    position: relative;
     color: #404BBF;
+
 }
 
 .header-list-link.active::after {
@@ -129,6 +131,8 @@ ol {
     height: 4px;
     border-radius: 2px;
     background-color: #404BBF;
+    position: absolute;
+    bottom: 0;
 
 }
 
@@ -499,3 +503,28 @@ fill: white;
     gap: 24px;
         
     }
+
+.portfolip-wrapper {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 40;
+    left: 32;
+    transform: translateY(464px);
+    transition: 250ms cubic-bezier (0.4, 0, 0.2, 1);
+
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #f4f4f4;
+    padding: 32px;
+    background: #5a4b8d;
+    width: 100%;
+    height: 100%;
+}
+
